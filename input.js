@@ -19,24 +19,30 @@ const handleUserInput = function(stdin) {
     process.exit();
   }
   if (stdin === 'w'){
-    console.log('up');
+    //console.log('up');
     connection.write('Move: up');
   }
   if (stdin === 'a'){
-    console.log('left');
+    //console.log('left');
     connection.write('Move: left');
   }
   if (stdin === 'd'){
-    console.log('right');
+    //console.log('right');
     connection.write('Move: right');
   }
   if (stdin === 's'){
-    console.log('down');
+    //console.log('down');
     connection.write('Move: down');
   }
+  if (stdin === 'p'){
+    //console.log('down');
+    connection.write('Say: byebye loser');
+  }
+  if (stdin === 'o'){
+    //console.log('down');
+    connection.write('Say: ???');
+  }
 };
-
-
 
 module.exports = {
   setupInput
