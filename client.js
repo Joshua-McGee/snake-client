@@ -12,7 +12,7 @@ const connect = function() {
   //conn.write('Move: up');
   
   setInterval(() => {
-    conn.write('Move: left');
+    //conn.write('Move: left');
   }, 50)
 
   // event handler to handle incoming data and console log it for the player.
